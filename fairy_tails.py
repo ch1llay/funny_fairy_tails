@@ -1,19 +1,21 @@
 from main import *
 
-hero_kachestvo_imen = "Добрый"
-hero_imen = "человек"
-place1_imen = "дом"
-place2_imen = "кремль"
-action1_inf = "думать"
-action2_inf = "жить"
-action3_inf = "какать"
-hero2_imen = "домоправительница"
-hero2_dop = "умная"
-subject1_imen = "ложка"
-subject2_imen = "кошка"
-subject4_imen = "чеснок"
-subject5_imen = "ястреб"
-subject6_imen = "печень"
+hero_kachestvo_imen = ""
+hero_imen = ""
+place1_imen = ""
+place2_imen = ""
+action1_inf = ""
+action2_inf = ""
+action3_inf = ""
+hero2_imen = ""
+hero2_dop = ""
+subject1_imen = ""
+subject2_imen = ""
+subject4_imen = ""
+subject5_imen = ""
+subject6_imen = ""
+
+
 hero_got_rod = get_rod(hero_imen)
 hero2_dop_tvar = tvar(hero2_dop)
 place1_vin = vin(place1_imen)
@@ -27,7 +29,8 @@ hero2_got_rod = get_rod(hero2_imen)
 hero2_sam = change_rod("сама", hero2_got_rod, "past")
 print(hero2_sam)
 day = random.choice(["вчера", "сегодня", "на прошлой неделе", "в прошлом месяце"])
-prichina = random.choice([f"{change_rod('мыть', hero2_got_rod, 'past')} зебру", f"{change_rod('пробивать', hero2_got_rod, 'past')} прессак медведю"])
+prichina = random.choice([f"{change_rod('мыть', hero2_got_rod, 'past')} зебру",
+                          f"{change_rod('пробивать', hero2_got_rod, 'past')} прессак медведю"])
 subject1_vin = vin(subject1_imen)
 subject1_rod = rod(subject1_imen)
 subject2_vin = vin(subject2_imen)
@@ -38,7 +41,6 @@ subject5_vin = vin(subject5_imen)
 subject5_rod = rod(subject5_imen)
 subject5_tvar = tvar(subject5_imen)
 subject6_rod = rod(subject6_imen)
-
 
 kasha_is_topora = f"""
 {hero_kachestvo_imen} {hero_imen} шёл на {place1_vin}. {action1_proshed_vr} в пути, {action2_inf} хочется. Дошёл до {place2_rod}, постучал в крайнюю избу:
