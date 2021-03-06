@@ -1,7 +1,7 @@
 from main import *
 
 hero_kachestvo_imen, hero_imen, place1_imen, place2_imen, action1_inf, action2_inf, action3_inf, hero2_imen, hero2_dop, subject1_imen, subject2_imen, subject4_imen, subject5_imen, \
-subject6_imen = input("hero_kachestvo_imen hero_imen place1_imen place2_imen action1_inf action2_inf action3_inf hero2_imen hero2_dop subject1_imen subject2_imen subject4_imen subject5_imen")
+subject6_imen = input("hero_kachestvo_imen hero_imen place1_imen place2_imen \naction1_inf action2_inf action3_inf hero2_imen hero2_dop\nsubject1_imen subject2_imen subject4_imen subject5_imen subject6_imen\n").split()
 
 hero_got_rod = get_rod(hero_imen)
 hero2_dop_tvar = tvar(hero2_dop)
@@ -30,7 +30,7 @@ subject6_rod = rod(subject6_imen)
 
 kasha_is_topora = f"""
 {hero_kachestvo_imen} {hero_imen} шёл на {place1_vin}. {action1_proshed_vr} в пути, {action2_inf} хочется. Дошёл до {place2_rod}, постучал в крайнюю избу:
-- Пустите {action3_inf} {hero_kachestvo_rod} {hero_rod} Дверь отворила {hero2_imen}.
+- Пустите {action3_inf} {hero_kachestvo_rod} {hero_rod}. Дверь отворила {hero2_imen}.
 - Заходи, {hero_kachestvo_imen}.
 - А нет ли у тебя, {hero2_imen}, перекусить чего? У {hero2_rod} всего вдоволь, а {hero_rod} поскупилась накормить, прикинулась {hero2_dop_tvar}.
 - Ох, {hero_kachestvo_imen} {hero_imen}, и {hero2_sam} {day} ещё ничего не ела: {prichina}.
