@@ -1,20 +1,7 @@
 from main import *
 
-hero_kachestvo_imen = ""
-hero_imen = ""
-place1_imen = ""
-place2_imen = ""
-action1_inf = ""
-action2_inf = ""
-action3_inf = ""
-hero2_imen = ""
-hero2_dop = ""
-subject1_imen = ""
-subject2_imen = ""
-subject4_imen = ""
-subject5_imen = ""
-subject6_imen = ""
-
+hero_kachestvo_imen, hero_imen, place1_imen, place2_imen, action1_inf, action2_inf, action3_inf, hero2_imen, hero2_dop, subject1_imen, subject2_imen, subject4_imen, subject5_imen, \
+subject6_imen = input("hero_kachestvo_imen hero_imen place1_imen place2_imen action1_inf action2_inf action3_inf hero2_imen hero2_dop subject1_imen subject2_imen subject4_imen subject5_imen")
 
 hero_got_rod = get_rod(hero_imen)
 hero2_dop_tvar = tvar(hero2_dop)
@@ -27,7 +14,6 @@ hero_rod = rod(hero_imen)
 hero2_rod = rod(hero2_imen)
 hero2_got_rod = get_rod(hero2_imen)
 hero2_sam = change_rod("сама", hero2_got_rod, "past")
-print(hero2_sam)
 day = random.choice(["вчера", "сегодня", "на прошлой неделе", "в прошлом месяце"])
 prichina = random.choice([f"{change_rod('мыть', hero2_got_rod, 'past')} зебру",
                           f"{change_rod('пробивать', hero2_got_rod, 'past')} прессак медведю"])
