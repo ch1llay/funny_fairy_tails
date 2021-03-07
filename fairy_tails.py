@@ -57,7 +57,7 @@ kasha_is_topora = f"""
 {hero2_imen} принесла {subject4_vin}, {hero_imen} вымыл {subject1_vin}, опустил в {subject4_vin}, налил воды и поставил на огонь.
 {hero2_imen} на {hero_rod} глядит, глаз не сводит.
 
-Достал {hero2_imen} ложку, помешивает варево. Попробовал.
+{change_rod("достать", hero2_got_rod, "past")} {hero2_imen} ложку, помешивает варево. {change_rod("попробовать", hero2_got_rod, "past")}.
 - Ну, как? - спрашивает {hero2_imen}.
 - Скоро будет готова, - {hero_imen} отвечает, - жаль вот только, что посолить нечем.
 - Соль-то у меня есть, посоли.
@@ -73,7 +73,7 @@ kasha_is_topora = f"""
 Поели вдвоем {subject2_vin}. {hero2_imen} спрашивает:
 - {hero_kachestvo_imen} Когда ж {subject1_vin} будем есть?
 - Да, вишь, он не {change_time_verb(action3_inf, "past", get_rod(subject1_imen))},- отвечал {hero_imen},- где-нибудь на дороге доварю да позавтракаю!
-Тотчас {change_time_verb("спрятать", "past", hero_got_rod)} {subject1_vin} в ранец, распростился с хозяйкою и пошёл в иную {place2_vin}.
+Тотчас {change_time_verb("спрятать", "past", hero_got_rod)} {subject1_vin} в ранец, распростился с хозяйкою и пошёл в {change_rod("иной", "femn")} {place2_vin}.
 
 Вот так-то {hero_imen} и {subject2_rod} поел и {subject1_vin} {change_time_verb("унести", "past", hero_got_rod)}!
 """
