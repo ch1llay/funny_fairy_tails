@@ -63,17 +63,17 @@ kasha_is_topora = f"""
 {hero_imen} посолил, снова попробовал.
 - Хороша! Ежели бы сюда да горсточку {subject5_rod}! {hero2_imen} засуетилась, принесла откуда-то мешочек {subject5_rod}.
 - Бери, заправь как надобно. Заправил варево {subject5_tvar}. Варил, варил, помешивал, попробовал. Глядит {hero2_imen} на {hero_imen}а во все глаза, оторваться не может.
-- Ох, и {subject2_imen} хороша! - облизнулся {hero_imen}.- Как бы сюда да чуток {subject6_rod} - было бы и вовсе объедение.
+- Ох, и {subject2_imen} хороша! - {change_time_verb("облизнуться", "past", hero_got_rod)} {hero_imen}.- Как бы сюда да чуток {subject6_rod} - было бы и вовсе объедение.
 {change_time_verb("найтись", "past", get_rod(subject6_imen))} у {hero2_rod}  и {subject6_imen} .
 
 Сдобрили {subject2_vin}.
 - Ну, {hero2_imen}, теперь подавай хлеба да принимайся за ложку: станем {subject2_vin} есть!
 - Вот уж не думала, что из {subject1_rod} эдакую добрую {subject2_vin} можно {action3_inf}, - дивится {hero2_imen}.
 Поели вдвоем {subject2_vin}. {hero2_imen} спрашивает:
-- Служивый! Когда ж {subject1_vin} будем есть?
-- Да, вишь, он не уварился,- отвечал {hero_imen},- где-нибудь на дороге доварю да позавтракаю!
-Тотчас припрятал {subject1_vin} в ранец, распростился с хозяйкою и пошёл в иную {place2_vin}.
+- {hero_kachestvo_imen} Когда ж {subject1_vin} будем есть?
+- Да, вишь, он не {change_time_verb(action3_inf, "past", get_rod(subject1_imen))},- отвечал {hero_imen},- где-нибудь на дороге доварю да позавтракаю!
+Тотчас {change_time_verb("спрятать", "past", hero_got_rod)} {subject1_vin} в ранец, распростился с хозяйкою и пошёл в иную {place2_vin}.
 
-Вот так-то {hero_imen} и {subject2_rod} поел и {subject1_vin} унёс!
+Вот так-то {hero_imen} и {subject2_rod} поел и {subject1_vin} {change_time_verb("унести", "past", hero_got_rod)}!
 """
 print(kasha_is_topora)
